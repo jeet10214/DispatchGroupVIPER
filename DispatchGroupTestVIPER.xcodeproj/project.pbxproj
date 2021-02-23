@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7110FA0F25E5701700690408 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110FA0E25E5701700690408 /* SecondVC.swift */; };
+		7110FA1425E5703200690408 /* SecondInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110FA1325E5703200690408 /* SecondInteractor.swift */; };
+		7110FA1A25E5704500690408 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110FA1925E5704500690408 /* SecondPresenter.swift */; };
+		7110FA2225E5705300690408 /* SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110FA2125E5705300690408 /* SecondRouter.swift */; };
+		7110FA2725E5706000690408 /* SecondBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110FA2625E5705F00690408 /* SecondBuilder.swift */; };
+		7110FA2C25E5706E00690408 /* SecondVCProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110FA2B25E5706E00690408 /* SecondVCProtocols.swift */; };
 		717B34ED25E1AE8700BC58CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B34EC25E1AE8700BC58CD /* AppDelegate.swift */; };
 		717B34EF25E1AE8700BC58CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B34EE25E1AE8700BC58CD /* SceneDelegate.swift */; };
 		717B34F125E1AE8700BC58CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B34F025E1AE8700BC58CD /* ViewController.swift */; };
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7110FA0E25E5701700690408 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		7110FA1325E5703200690408 /* SecondInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInteractor.swift; sourceTree = "<group>"; };
+		7110FA1925E5704500690408 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		7110FA2125E5705300690408 /* SecondRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRouter.swift; sourceTree = "<group>"; };
+		7110FA2625E5705F00690408 /* SecondBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBuilder.swift; sourceTree = "<group>"; };
+		7110FA2B25E5706E00690408 /* SecondVCProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVCProtocols.swift; sourceTree = "<group>"; };
 		717B34E925E1AE8700BC58CD /* DispatchGroupTestVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DispatchGroupTestVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		717B34EC25E1AE8700BC58CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		717B34EE25E1AE8700BC58CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +98,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7110FA0625E56FC500690408 /* SecondModule */ = {
+			isa = PBXGroup;
+			children = (
+				7110FA0D25E56FF400690408 /* Protocols */,
+				7110FA0C25E56FEE00690408 /* Builder */,
+				7110FA0B25E56FE900690408 /* Router */,
+				7110FA0A25E56FE200690408 /* Entity */,
+				7110FA0925E56FDD00690408 /* Presenter */,
+				7110FA0825E56FD600690408 /* Interactor */,
+				7110FA0725E56FCF00690408 /* View */,
+			);
+			name = SecondModule;
+			sourceTree = "<group>";
+		};
+		7110FA0725E56FCF00690408 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7110FA0E25E5701700690408 /* SecondVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7110FA0825E56FD600690408 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7110FA1325E5703200690408 /* SecondInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		7110FA0925E56FDD00690408 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7110FA1925E5704500690408 /* SecondPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		7110FA0A25E56FE200690408 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		7110FA0B25E56FE900690408 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7110FA2125E5705300690408 /* SecondRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		7110FA0C25E56FEE00690408 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				7110FA2625E5705F00690408 /* SecondBuilder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		7110FA0D25E56FF400690408 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7110FA2B25E5706E00690408 /* SecondVCProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		717B34E025E1AE8700BC58CD = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +222,7 @@
 		717B351F25E1AEA300BC58CD /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				7110FA0625E56FC500690408 /* SecondModule */,
 				717B352325E1AEB100BC58CD /* FirstModule */,
 			);
 			name = Module;
@@ -347,11 +429,17 @@
 			files = (
 				717B353025E1B10A00BC58CD /* viewPresenter.swift in Sources */,
 				717B353E25E1B12F00BC58CD /* viewBuilder.swift in Sources */,
+				7110FA1A25E5704500690408 /* SecondPresenter.swift in Sources */,
+				7110FA1425E5703200690408 /* SecondInteractor.swift in Sources */,
 				717B34F125E1AE8700BC58CD /* ViewController.swift in Sources */,
+				7110FA2725E5706000690408 /* SecondBuilder.swift in Sources */,
 				717B352B25E1B0FC00BC58CD /* viewInteractor.swift in Sources */,
+				7110FA0F25E5701700690408 /* SecondVC.swift in Sources */,
 				717B34ED25E1AE8700BC58CD /* AppDelegate.swift in Sources */,
 				717B34EF25E1AE8700BC58CD /* SceneDelegate.swift in Sources */,
 				717B354425E1B14200BC58CD /* viewProtocols.swift in Sources */,
+				7110FA2225E5705300690408 /* SecondRouter.swift in Sources */,
+				7110FA2C25E5706E00690408 /* SecondVCProtocols.swift in Sources */,
 				717B353625E1B12400BC58CD /* viewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

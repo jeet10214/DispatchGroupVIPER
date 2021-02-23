@@ -19,6 +19,11 @@ final class viewPresenter : viewModuleInputProtocol, viewOutputProtocol {
         
         interactor.callAPIonDispatchGroup()
     }
+    
+    func userTappedOnNextButton() {
+        
+        router.showNextScreen()
+    }
 }
 
 extension viewPresenter : viewInteractorOutputProtocol {

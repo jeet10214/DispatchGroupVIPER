@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class viewInteractor : viewInteractorInputProtocol {
+final class viewInteractor : viewInteractorInputProtocol {
     
     weak var presenter: viewInteractorOutputProtocol?
     

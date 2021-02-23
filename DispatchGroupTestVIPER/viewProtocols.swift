@@ -26,6 +26,7 @@ protocol viewModuleInputProtocol : AnyObject {
 protocol viewOutputProtocol : AnyObject {
     
     func userTappedOnButton()
+    func userTappedOnNextButton()
 }
 
 protocol viewInteractorInputProtocol : AnyObject {

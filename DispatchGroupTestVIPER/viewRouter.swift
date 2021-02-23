@@ -14,7 +14,8 @@ final class viewRouter: viewRouterInputerProtocol {
     
     func showNextScreen() {
         
-        // Add code for next screen
+        let secondVC = SecondViewBuilder().buildModule()
+        viewController?.navigationController?.pushViewController(secondVC, animated: true)
     }
     
 }
